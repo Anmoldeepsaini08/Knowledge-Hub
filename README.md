@@ -14,3 +14,4 @@ Functionalities provided by Library Management System are as follows:
 •	Editing, adding and updating of Records is improved which results in proper resource management of Member data.
 •	Manage the information of Librarian
 •	Integration of all records of Member.
+
