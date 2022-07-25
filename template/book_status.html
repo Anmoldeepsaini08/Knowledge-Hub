@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Status</title>
+    <link rel="stylesheet" href="{% static 'book_status.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="{%url 'addbooks' %}">
+                        <span class="icon"><ion-icon name="school"></ion-icon></span>
+                        <span class="title" style="font-size: 1.5em; font-weight: 500;">Librarian</span>
+                    </a>
+                </li>
+             
+                <li class="hovered">
+                    <a href="{%url 'addbooks' %}">
+                        <span class="icon"><ion-icon name="book"></ion-icon> </span>
+                        <span class="title">Add Books</span>
+                    </a>
+                </li>
+            </li>
+            <li class="hovered">
+                <a href="{%url 'bookstatus' %}">
+                    <span class="icon"><ion-icon name="bookmarks"></ion-icon></span>
+                    <span class="title">Books Status</span>
+                </a>
+            </li>
+               
+                <li class="hovered">
+                    <a href="{%url 'issuebook' %}">
+                        <span class="icon"><ion-icon name="return-right"></ion-icon></span>
+                        <span class="title">Issue Book</span>
+                    </a>
+                </li>
+                <li class="hovered">
+                    <a href="{%url 'issuebookstatus' %}">
+                        <span class="icon"><ion-icon name="bookmarks"></ion-icon></span>
+                        <span class="title">Issue Books Status</span>
+                    </a>
+                </li>
+                <li class="hovered">
+                    <a href="{%url 'returnbook' %}">
+                        <span class="icon"><ion-icon name="return-left"></ion-icon></span>
+                        <span class="title"> Return Books</span>
+                    </a>
+                </li>
+                <li class="hovered">
+                    <a href="{%url 'addmember' %}">
+                        <span class="icon"><ion-icon name="return-left"></ion-icon></span>
+                        <span class="title"> Add Member</span>
+                    </a>
+                </li>
+                <li class="hovered">
+                    <a href="{%url 'memberstatus' %}">
+                        <span class="icon"><ion-icon name="bookmarks"></ion-icon></span>
+                        <span class="title">Member Status</span>
+                    </a>
+                </li>
+                <li class="hovered">
+                    <a href="{%url 'signout' %}">
+                        <span class="icon"><ion-icon name="exit-outline"></ion-icon></span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+
+    <main>
+       
+        <table  >
+            <thead>
+               
+                <th>Book Code</th>  
+                <th>Book Name</th>
+                <th>Author</th>
+                <th>Quantity</th>
+                <th>Branch</th>
+                <th>Category</th>
+                
+               
+            </thead>
+            {% for k in bookstatus %}
+            <tr>
+                <td>{{k.book_code}}</td>
+                <td>{{k.book_name}}</td>
+                <td>{{k.author}}</td>
+                <td>{{k.quantity}}</td>
+                <td>{{k.branch_book}}</td>
+                <td>{{k.category}}</td>
+            </tr>
+            
+            {% endfor %}
+        </table>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
