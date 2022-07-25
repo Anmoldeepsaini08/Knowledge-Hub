@@ -2,6 +2,7 @@
 The Library Management System is to manage the details of  Books, Issues, Librarian, Member.
 It manages all the information about Member, Books ,Users can easily check books and issue them from their respective Id’s. 
 The purpose of the project is to build an application program to reduce the manual work for managing the member, Books, Issues records.
+You can easily issue books from the website with just a click. 
 
 Functionalities provided by Library Management System are as follows:
 
