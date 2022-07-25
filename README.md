@@ -5,9 +5,9 @@ The purpose of the project is to build an application program to reduce the manu
 
 Functionalities provided by Library Management System are as follows:
 
-•	Provides the searching facilities based on various factors. Such as S Issues, Librarian, Member
-•	It tracks all the information of Books,Librarian ect
-•	Manage the information of Books
+•	Provides the searching facilities based on various factors. Such as  Issues, Librarian, Member
+•	It tracks all the information of Books,Librarian .
+•	Manage the information of Books.
 •	Shows the information and description of the Student, Issues
 •	To increase efficiency of managing the  Books and Member.
 •	It deals with monitoring the information and transactions of Librarian.
